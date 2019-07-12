@@ -1,0 +1,20 @@
+
+<div class="container">
+    <hr>
+    <div class="row">
+        <div *ngFor="let photo of photos" class="col-md-4" style="padding-top: 15px; padding-bottom: 15px;" >
+            <div class="content">
+                <div class="doc">
+                    <app-photo
+                        [url]="photo.url"
+                        [description]="photo.description">
+                    </app-photo>
+                    <div class="links">
+                        <a><i class="fa fa-heart fa-lg"></i><span>{{ photo.likes }}</span></a>
+                        <a><i class="fa fa-comment fa-lg"></i><span>{{ photo.comments }}</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
