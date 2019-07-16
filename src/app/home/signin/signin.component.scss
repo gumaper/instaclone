@@ -1,0 +1,17 @@
+.form__wrapper {
+    border: 1px solid #c0c0c0;
+    padding: 0 50px;
+
+    &h4 {
+        margin-bottom: 1000px;
+    }
+}
+
+p:nth-child(2) {
+    border: 1px solid #c0c0c0;
+    padding: 20px 70px;
+}
+
+span {
+    color: #3897F0;
+}
