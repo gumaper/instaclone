@@ -27,10 +27,10 @@ export class FormFieldError {
 
     private getErrorMessage(): string {
         if(this.formControl.errors.required) {
-            return 'Dado obrigátorio'
+            return 'dado obrigátorio'
         }
         else if(this.formControl.errors.email) {
-            return 'Email inválido'
+            return 'email inválido'
         }
         else if(this.formControl.errors.minlength) {
             const requiredMinLength = this.formControl.errors.minlength.requiredLength;
@@ -39,6 +39,9 @@ export class FormFieldError {
         else if(this.formControl.errors.maxlength) {
             const requiredMaxLength = this.formControl.errors.maxlength.requiredLength
             return `máximo ${ requiredMaxLength } caracteres`
+        }
+        else if(this.formControl.errors.userNameTaken) {
+            return 'usuário já existe'
         }
         
     }

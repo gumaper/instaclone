@@ -2,7 +2,7 @@
     <form [formGroup]="loginForm" (submit)="login()" class="form mt-4">
         <h4 class="text-center mb-4">INSTAGRAM</h4>
         <div class="form-group">
-            <input 
+            <input #userNameInput
                 formControlName="userName"
                 class="form-control" 
                 placeholder="Username" 
@@ -35,4 +35,4 @@
 </div>
 
 
-<p class="text-center mt-3">Don't have an account?<a [routerLink]="['/signup']"><span> Sign up</span></a></p>
+<p class="text-center mt-3">Don't have an account?<a [routerLink]="['/signup']"><span>Sign up</span></a></p>

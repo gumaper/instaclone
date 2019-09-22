@@ -1,0 +1,31 @@
+.form__wrapper {
+    border: 1px solid #c0c0c0;
+    padding: 0 50px;
+    max-width: 370px;
+
+    & h4 {
+        text-transform: uppercase;
+    }
+
+    & h5 {
+        font-size: 14px;
+        font-weight: 200;
+    }
+}
+
+p:nth-child(2) {
+    border: 1px solid #c0c0c0;
+    padding: 20px 70px;
+}
+
+p {
+    max-width: 370px;
+}
+
+span {
+    color: #3897F0;
+}
+
+a {
+    padding: 15px 8px;
+}

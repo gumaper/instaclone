@@ -8,11 +8,14 @@ import { NotFoundComponent } from './shared/components/errors/not-found/not-foun
 import { SigninComponent } from './home/signin/signin.component';
 import { SignupComponent } from './home/signup/signup.component';
 
+import { AuthGuard } from './core/auth/auth.guard';
+
 const routes: Routes = [
   { path: '', component: HomeComponent, children: [
     {
       path: '',
-      component: SigninComponent
+      component: SigninComponent,
+      canActivate: [AuthGuard]
     },
     {
       path: 'signup',
